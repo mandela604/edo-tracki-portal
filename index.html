@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif; 
         }
         header {
-            background-color: #4CAF50; /* Green background */
+            background-color: #4CAF50;
             color: white;
             padding: 30px 20px;
             text-align: center;
@@ -26,10 +26,18 @@
             margin: 10px 0 0;
             opacity: 0.9;
         }
+        .iframe-container {
+            width: 100%;
+            height: calc(100vh - 140px); /* Matches header height */
+            overflow: hidden; /* Prevents outer scroll */
+        }
         iframe {
             width: 100%;
-            height: calc(100vh - 140px); /* Adjusted for taller header */
+            height: 100%;
             border: none;
+            padding-top: 60px; /* Key fix: Pushes Tracki content down to clear any overlap */
+            box-sizing: border-box;
+            overflow: auto; /* Allows scrolling inside iframe if needed */
         }
     </style>
 </head>
@@ -39,6 +47,8 @@
         <p class="subtitle">Powered by EdoSafe Security Intelligence Grid</p>
     </header>
 
-    <iframe src="https://app.tracki.com/map" allowfullscreen></iframe>
+    <div class="iframe-container">
+        <iframe src="https://app.tracki.com/map" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
