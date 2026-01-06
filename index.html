@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edo State Tracki Portal</title>
+    <title>ESSOC — Edo State Strategic Security Operations Centre</title>
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; }
+        body { 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+        }
         header {
-            background-color: #4CAF50; /* Green color matching the "Add tracker" button */
+            background-color: #4CAF50; /* Green background */
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
-            font-size: 28px;
+        }
+        .main-title {
+            font-size: 32px;
             font-weight: bold;
+            margin: 0;
         }
-        .logo {
-            font-family: 'Arial Black', Arial, sans-serif; /* Bold sans-serif to mimic the logo style */
-            font-size: 1.2em; /* Makes "Tracki" slightly larger */
-            color: #071e08; /* Green for the exclamation-like dot */
-        }
-        .logo span {
-            color: white; /* White for the main text */
-        }
-        .logo .dot {
-            color: #071e08;
-            font-size: 1.5em;
-            vertical-align: middle;
+        .subtitle {
+            font-size: 18px;
+            font-style: italic;
+            margin: 10px 0 0;
+            opacity: 0.9;
         }
         iframe {
             width: 100%;
-            height: calc(100vh - 80px);
+            height: calc(100vh - 140px); /* Adjusted for taller header */
             border: none;
         }
     </style>
 </head>
 <body>
     <header>
-        Edo State <span class="logo">Track<span class="dot">i</span></span> Portal
+        <h1 class="main-title">ESSOC — Edo State Strategic Security Operations Centre</h1>
+        <p class="subtitle">Powered by EdoSafe Security Intelligence Grid</p>
     </header>
 
     <iframe src="https://app.tracki.com/map" allowfullscreen></iframe>
