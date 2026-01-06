@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edo State Tracki Portal</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header {
+            background-color: #4CAF50; /* Green color matching the "Add tracker" button */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .logo {
+            font-family: 'Arial Black', Arial, sans-serif; /* Bold sans-serif to mimic the logo style */
+            font-size: 1.2em; /* Makes "Tracki" slightly larger */
+            color: #071e08; /* Green for the exclamation-like dot */
+        }
+        .logo span {
+            color: white; /* White for the main text */
+        }
+        .logo .dot {
+            color: #071e08;
+            font-size: 1.5em;
+            vertical-align: middle;
+        }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 80px);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Edo State <span class="logo">Track<span class="dot">i</span></span> Portal
+    </header>
+
+    <iframe src="https://app.tracki.com/map" allowfullscreen></iframe>
+</body>
+</html>
